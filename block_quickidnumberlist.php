@@ -15,20 +15,20 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Block quickidnumbersearch is defined here.
+ * Block quickidnumberlist is defined here.
  *
- * @package     block_quickidnumbersearch
+ * @package     block_quickidnumberlist
  * @copyright   2023 Daniel McCluskey <dmccluskey1@glos.ac.uk>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class block_quickidnumbersearch extends block_base {
+class block_quickidnumberlist extends block_base {
 
     /**
      * Initializes class member variables.
      */
     public function init() {
         // Needed by Moodle to differentiate between blocks.
-        $this->title = get_string('pluginname', 'block_quickidnumbersearch');
+        $this->title = get_string('pluginname', 'block_quickidnumberlist');
     }
 
     /**
@@ -55,7 +55,7 @@ class block_quickidnumbersearch extends block_base {
         if (!empty($this->config->text)) {
             $this->content->text = $this->config->text;
         } else {
-            $text = 'Please define the content text in /blocks/quickidnumbersearch/block_quickidnumbersearch.php.';
+            $text = 'Please define the content text in /blocks/quickidnumberlist/block_quickidnumberlist.php.';
             $this->content->text = $text;
         }
 
@@ -71,7 +71,7 @@ class block_quickidnumbersearch extends block_base {
 
         // Load user defined title and make sure it's never empty.
         if (empty($this->config->title)) {
-            $this->title = get_string('pluginname', 'block_quickidnumbersearch');
+            $this->title = get_string('pluginname', 'block_quickidnumberlist');
         } else {
             $this->title = $this->config->title;
         }

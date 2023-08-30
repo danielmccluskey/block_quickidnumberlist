@@ -17,7 +17,7 @@
 /**
  * Plugin strings are defined here.
  *
- * @package     block_quickidnumbersearch
+ * @package     block_quickidnumberlist
  * @category    string
  * @copyright   2023 Daniel McCluskey <dmccluskey1@glos.ac.uk>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -30,4 +30,3 @@ $string['loading'] = 'Loading';
 $string['pluginname'] = 'Quick IDNumber List';
 $string['pluginname'] = 'Quick IDNumber List';
 $string['quickidnumberlist:use'] = 'Use Quick IDNumber List';
-$string['quickidnumbersearch:use'] = 'Use';

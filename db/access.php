@@ -17,7 +17,7 @@
 /**
  * Plugin capabilities are defined here.
  *
- * @package     block_quickidnumbersearch
+ * @package     block_quickidnumberlist
  * @category    access
  * @copyright   2023 Daniel McCluskey <dmccluskey1@glos.ac.uk>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $capabilities = [
 
-    'block/quickidnumbersearch:use' => [
+    'block/quickidnumberlist:use' => [
         'captype' => 'view',
         'contextlevel' => CONTEXT_SYSTEM,
         'archetypes' => [

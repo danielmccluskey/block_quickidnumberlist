@@ -17,14 +17,14 @@
 /**
  * Plugin version and other meta-data are defined here.
  *
- * @package     block_quickidnumbersearch
+ * @package     block_quickidnumberlist
  * @copyright   2023 Daniel McCluskey <dmccluskey1@glos.ac.uk>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->component = 'block_quickidnumbersearch';
+$plugin->component = 'block_quickidnumberlist';
 $plugin->release = '0.1.0';
 $plugin->version = 2023083000;
 $plugin->requires = 2022112800;
