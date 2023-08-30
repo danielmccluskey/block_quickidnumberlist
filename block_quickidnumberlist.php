@@ -50,15 +50,15 @@ class block_quickidnumberlist extends block_base {
         $this->content = new stdClass();
         $this->content->items = array();
         $this->content->icons = array();
-        $this->content->footer = '';
+        $this->content->footer = '';        
+        global $CFG;
 
-        if (!empty($this->config->text)) {
-            $this->content->text = $this->config->text;
-        } else {
-            $text = 'Please define the content text in /blocks/quickidnumberlist/block_quickidnumberlist.php.';
-            $this->content->text = $text;
-        }
-
+        //Quick description of block
+        $this->content->text = '<p>Search for an Assignment by ID Number</p>';
+        $this->content->text .= '<form action="'.$CFG->wwwroot.'/blocks/quickidnumberlist/quickidnumber.php" method="post">
+        <input type="text" name="idnumber" placeholder="Search for ID Number">
+        <input type="submit" value="Search">
+        </form>';  
         return $this->content;
     }
 
